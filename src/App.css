@@ -44,18 +44,18 @@ h2 {
   display: flex;
   flex-wrap: wrap;
 }
-.list-item {
+.contestant-information {
   display: flex;
   padding: 0.5em;
   width: 100%;
 }
 
 @media all and (min-width: 60em) {
-  .list-item {
+  .contestant-information {
     width: 33.33%;
   }
 }
-.list-content {
+.contestant-content {
   border: 0.063em solid;
   background-color: #fff;
   display: flex;
@@ -63,10 +63,10 @@ h2 {
   padding: 1em;
   width: 100%;
 }
-.list-content p {
+.contestant-content p {
   flex: 1 0 auto;
 }
-.list-content h2 {
+.contestant-content h2 {
   margin-top: 0.625em;
 }
 

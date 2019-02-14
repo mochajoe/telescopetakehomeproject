@@ -7,12 +7,14 @@ export default class Facebook extends Component {
     name: ""
   };
 
-  responseFacebook = response => {
+  responseFacebook = ({name}) => {
     const { loginHandler } = this.props;
+    if (!name) {
+    loginHandler(false);
+    } else
     loginHandler(true);
-
     this.setState({
-      name: response.name,
+      name: name
     });
   };
 

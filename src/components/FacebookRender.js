@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import FacebookRender from "react-facebook-login";
+import FacebookLogin from "react-facebook-login";
 
 export default class Facebook extends Component {
   state = {
@@ -33,15 +33,14 @@ export default class Facebook extends Component {
         {loggedIn ? (
           <section className="welcome">
             <p>
-              {" "}
-              Welcome {name}!{" "}
+              Welcome {name}!
               <span id="logout-link" onClick={this.logOutHandler}>
                 {logout}
-              </span>{" "}
+              </span>
             </p>
           </section>
         ) : (
-          <FacebookRender
+          <FacebookLogin
             appId="531029017304611"
             autoLoad={true}
             cssClass="fbbutton"

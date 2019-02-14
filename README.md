@@ -23,6 +23,8 @@ Build with React, the top Parent Component is index.js, which renders out App.js
 
 Vanilla CSS formatting was used, mainly with Flexbox to keep the view repsonsive.  When the window is made smaller, flex wrap is used to wrap the content for easier viewing pleasure, this is useful for mobile devices with smaller screens.
 
+After logging into the Application, if the page is refreshed, it will auto sign in and load the "logged in" page until the user clicks the log out button.
+
 ## Technology Stack
  * Bootstrapped with Create-React-App
  * This is written with REACT JS

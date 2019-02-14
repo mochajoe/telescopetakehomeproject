@@ -13,9 +13,7 @@ export default class Facebook extends Component {
     loginHandler(false);
     } else
     loginHandler(true);
-    this.setState({
-      name: name
-    });
+    this.setState({name});
   };
 
   logOutHandler = () => {

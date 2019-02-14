@@ -4,9 +4,7 @@ const appId = "531029017304611";
 
 export default class Facebook extends Component {
   state = {
-    userID: "",
-    name: "",
-    email: ""
+    name: ""
   };
 
   responseFacebook = response => {
@@ -14,9 +12,7 @@ export default class Facebook extends Component {
     loginHandler(true);
 
     this.setState({
-      userID: response.userID,
       name: response.name,
-      email: response.email
     });
   };
 

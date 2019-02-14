@@ -80,7 +80,7 @@ h2 {
   font-size: 1.6em;
 }
 
-.LogInScreen {
+.log-in-screen {
   display: flex;
   flex-direction: column;
   justify-content: center;

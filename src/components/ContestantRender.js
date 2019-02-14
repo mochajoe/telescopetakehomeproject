@@ -62,7 +62,7 @@ class ContestantRender extends Component {
             </ul>
           </div>
         ) : (
-          <div className="LogInScreen">
+          <div className="log-in-screen">
             <h2>{loggedOut.headline}</h2>
             <FacebookRender
               loginText={loggedOut.login_button}

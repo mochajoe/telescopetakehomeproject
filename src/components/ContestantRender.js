@@ -42,7 +42,7 @@ class ContestantRender extends Component {
     return (
       <div>
         {isLoggedIn ? (
-          <div className="challengersContainer">
+          <div className="challengers-container">
             <header className="headline">
               <h2>{loggedIn.headline}</h2>
             </header>
@@ -52,7 +52,7 @@ class ContestantRender extends Component {
               loginHandler={this.loginHandler}
               loggedIn={isLoggedIn}
             />
-            <ul className="list">
+            <ul className="contestant-card-information">
               {contestantData.map(contestant => (
                 <ContestantCardData
                   key={contestant.id}

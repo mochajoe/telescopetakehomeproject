@@ -49,6 +49,11 @@ h2 {
   padding: 0.5em;
   width: 100%;
 }
+@media all and (min-width: 40em) {
+  .contestant-information {
+    width: 50%;
+  }
+}
 
 @media all and (min-width: 60em) {
   .contestant-information {

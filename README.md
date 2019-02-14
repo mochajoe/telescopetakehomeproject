@@ -1,69 +1,57 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Telescope-take-home-project
+## What is the Telescope-take-home-project?
+ > A Mock Voting webiste, this renders a Log out and Log in Page based on a wireframe given to me.
 
-## Available Scripts
+ ![telescope-app Demo](./gifs/Telescope-resize.gif "Window Resize Example Gif")
+ ![telescope-app Demoq](./gifs/telescope_loginandout.gif "Logging in and out function Gif-")
 
-In the project directory, you can run:
+## Table of Contents
 
-### `npm start`
+* [Description](#description)
+* [Technology Stack](#technology-stack)
+* [Installation](#installation)
+* [Operation](#operation)
+* [Testing](#testing)
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+## Description
 
-### `npm test`
+After launching the server via npm start.  Enter the server via the default path of localhost:3000 in the browser.  Upon Entering the site you are presented the Logoff page, use the facebook login button to authenticate via facebook.  After successful authentication, you are directed to the login Page.  This where the user would select the contestant of their choice if this was a production application. 
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Build with React, the top Parent Component is index.js, which renders out App.js.  App.js renders out the main component of Contestant Render.  Contestant Render uses fetch to make an API call to retrieve the JSON data provided.  This json data is also passed along to the FacebookRender Componenet, which loads an external library to render a facebook login button and passes the Facebook user information after sucessful login back it it's parent for rendering via a prop callback.  ContestantCardData maps out the contestant information via the API passed from it's parent Contestant Render.  
 
-### `npm run build`
+Vanilla CSS formatting was used, mainly with Flexbox to keep the view repsonsive.  When the window is made smaller, flex wrap is used to wrap the content for easier viewing pleasure, this is useful for mobile devices with smaller screens.
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Technology Stack
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+ * This is written with REACT JS
+ * CSS with flexbox
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Installation
 
-### `npm run eject`
+#### Environment dependencies
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+#### Clone project
+Clone repo from github:
+```sh
+# run git clone
+git clone https://github.com/mochajoe/telescopetakehomeproject.git
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+#### Project dependencies
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Install project dependencies for testing:
+```sh
+# run install script
+npm install
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Operation
 
-## Learn More
+Open index.html
+```sh
+# Run NPM Start to start server
+Default Server should be located on localhost:3000.  Enter this into the browser.
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
-# telescopetakehome

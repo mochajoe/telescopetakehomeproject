@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import FacebookLogin from "react-facebook-login";
+const appId = "531029017304611";
 
 export default class Facebook extends Component {
   state = {
@@ -29,7 +30,7 @@ export default class Facebook extends Component {
     const { name } = this.state;
     const { logout, loggedIn, loginText } = this.props;
     return (
-      <div>
+      <>
         {loggedIn ? (
           <section className="welcome">
             <p>
@@ -41,14 +42,14 @@ export default class Facebook extends Component {
           </section>
         ) : (
           <FacebookLogin
-            appId="531029017304611"
+            appId={appId}
             autoLoad={true}
             cssClass="fbbutton"
             textButton={loginText}
             callback={this.responseFacebook}
           />
         )}
-      </div>
+      </>
     );
   }
 }

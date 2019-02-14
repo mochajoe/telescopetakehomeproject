@@ -40,7 +40,7 @@ class ContestantRender extends Component {
   render() {
     const { isLoggedIn, contestantData, loggedIn, loggedOut } = this.state;
     return (
-      <div>
+      <>
         {isLoggedIn ? (
           <div className="challengers-container">
             <header className="headline">
@@ -70,7 +70,7 @@ class ContestantRender extends Component {
             />
           </div>
         )}
-      </div>
+      </>
     );
   }
 }

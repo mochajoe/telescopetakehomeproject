@@ -1,6 +1,6 @@
 # Telescope-take-home-project
 ## What is the Telescope-take-home-project?
- > A Mock Voting webiste, this renders a Log out and Log in Page based on a wireframe given to me.
+ > A Mock Voting website, this renders a Log out and Log in Page based on a wireframe given to me.
 
  ![telescope-app Demo](./gifs/Telescope-resize.gif "Window Resize Example Gif")
  ![telescope-app Demoq](./gifs/telescope_loginandout.gif "Logging in and out function Gif-")
@@ -15,6 +15,7 @@
 
 
 ## Description
+This is a A Mock Voting website.
 
 After launching the server via npm start.  Enter the server via the default path of localhost:3000 in the browser.  Upon Entering the site you are presented the Logoff page, use the facebook login button to authenticate via facebook.  After successful authentication, you are directed to the login Page.  This where the user would select the contestant of their choice if this was a production application. 
 

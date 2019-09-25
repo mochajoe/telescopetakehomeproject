@@ -10,9 +10,8 @@ class ContestantRender extends Component {
     contestantData: [],
     loggedOut: {},
     loggedIn: {},
-    error: "",
-    isLoggedIn: false
-  };
+    error: ""
+    };
 
   loginHandler = isLoggedIn => {
     this.setState({ isLoggedIn });
@@ -41,35 +40,19 @@ class ContestantRender extends Component {
     const { isLoggedIn, contestantData, loggedIn, loggedOut } = this.state;
     return (
       <>
-        {isLoggedIn ? (
           <div className="challengers-container">
             <header className="headline">
               <h2>{loggedIn.headline}</h2>
             </header>
-
-            <FacebookRender
-              logout={loggedIn.logout_link_text}
-              loginHandler={this.loginHandler}
-              loggedIn={isLoggedIn}
-            />
-            <ul className="contestant-card-information">
+            <div className="contestant-card-information">
               {contestantData.map(contestant => (
                 <ContestantCardData
                   key={contestant.id}
                   contestant={contestant}
                 />
               ))}
-            </ul>
+            </div>
           </div>
-        ) : (
-          <div className="log-in-screen">
-            <h2>{loggedOut.headline}</h2>
-            <FacebookRender
-              loginText={loggedOut.login_button}
-              loginHandler={this.loginHandler}
-            />
-          </div>
-        )}
       </>
     );
   }

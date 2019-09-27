@@ -40,9 +40,9 @@ class ContestantRender extends Component {
     const { isLoggedIn, contestantData, loggedIn, loggedOut } = this.state;
     return (
       <>
-          <div className="challengers-container">
+          <div className="vote-grid">
             <header className="headline">
-              <h2>{loggedIn.headline}</h2>
+              <h2>VOTE FOR ANTHONY'S BEST TALENT //Place Holder</h2>
             </header>
             <div className="contestant-card-information">
               {contestantData.map(contestant => (
